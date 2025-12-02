@@ -1,0 +1,221 @@
+
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho de Português - Slam </title>
+    <!-- Aluna: Yasmim Oliveira da Silva e Alice Maria Eremita Moyano (148) -->
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        header {
+            background-color: #b79fd8;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            min-height: 70vh;
+        }
+
+        .audio-center {
+            display: flex;
+            justify-content: center;
+            margin: 24px 0;
+        }
+
+        .borda-conto {
+            background: #fff;
+            border: 2px solid #b79fd8;
+            border-radius: 16px;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.18), 0 1.5px 6px rgba(74,144,226,0.12);
+            padding: 32px 24px;
+            max-width: 800px;
+            margin: 40px auto;
+            font-size: 1.25em;
+        }
+
+        .borda-conto h2 {
+            margin-top: 0;
+            text-align: center;
+            color: #b79fd8;
+        }
+
+        .btn-modo {
+            display: block;
+            margin: 0 auto 24px auto;
+            padding: 10px 24px;
+            background: #b79fd8;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn-modo:hover {
+            background: #b79fd8;
+        }
+
+        footer {
+            background-color: #b79fd8;
+            color: #fff;;
+            text-align: center;
+            padding: 15px;
+            font-size: 1em;
+            margin: 0;
+            border-top: none;
+        }
+
+        @media (max-width: 600px) {
+            .borda-conto {
+                padding: 16px 8px;
+                margin: 16px 4px;
+                max-width: 98vw;
+            }
+            main {
+                padding: 8px;
+            }
+            header, footer {
+                padding: 10px;
+                font-size: 1em;
+            }
+            .btn-modo {
+                width: 100%;
+                font-size: 1em;
+                display: block;
+            }
+            body.leitura .borda-conto {
+                font-size: 1.45em;
+                line-height: 2.3;
+                padding: 24px 6px;
+                background: #fffbe6;
+                color: #222;
+            }
+            .audio-center {
+                margin: 16px 0;
+            }
+        }
+
+        body.leitura {
+            background: #f5ecd7;
+            color: #222;
+        }
+        body.leitura .borda-conto {
+            background: #fffbe6;
+            color: #222;
+            border-color: #b79fd8;
+            font-size: 1.25em;
+            line-height: 2;
+            letter-spacing: 0.5px;
+        }
+        
+
+        nav {
+            margin-top: 16px;
+            text-align: center;
+        }
+        .nav-btn {
+            display: inline-block;
+            background: #b79fd8;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 24px;
+            margin: 0 8px;
+            font-size: 1em;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+        .nav-btn:hover {
+            background:#fff;
+            color: #fff;
+        }
+
+        nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nav-btn {
+    padding: 10px 18px;
+    font-size: 1.2em;
+}
+    </style>
+</head>
+<body>
+
+<header>
+<h1>SLAM</h1>
+<nav>
+    <a href="conto.html" class="nav-btn">conto</a>
+    <a href="reportagem.html" class="nav-btn">reportagem</a>
+    <a href="slam.html" class="nav-btn">slam</a>
+</nav>
+</header>
+
+<main>
+     <button class="btn-modo" onclick="alternarModoLeitura()">Alternar modo claro/leitura</button>
+    
+    <div class="borda-conto">
+        <h2>VERSOS PELA IGUALDADE - ART.5</h2>
+       <p>
+Todo somos iguais, a lei me diz.<br>
+Mas na rua vejo quem chora, quem ri.<br>
+Alguns têm palácio, outros chão,<br>
+Uns têm direitos, outros só não.<br><br>
+
+Direitos não são esmola,<br>
+É poder andar sem medo,<br>
+É sonhar e ser inteiro,<br>
+É não ter que se esconder<br>
+Pra ser quem é de verdade.<br><br>
+
+Direitos humanos são chamas,<br>
+São ponte de luz, são voz,<br>
+São a palavra que inspira,<br>
+São ar que respira,<br>
+São pão que alimenta,<br>
+Não pertencem a alguns,<br>
+Eles nascem como nós.<br><br>
+
+Direitos humanos não são favor,<br>
+São raiz, são clamor, são amor,<br>
+Na voz, na pele, na multidão,<br>
+É a vida pulsando em cada coração.<br><br>
+
+Então eu ergo meu verso como bandeira,<br>
+Meu peito como fronteira,<br>
+Minha esperança em plena flor.<br>
+Porque direitos humanos são isso:<br>
+Um mundo que cabe inteiro,<br>
+No simples gesto do amor.<br>
+</p>
+    </div>
+</main>
+
+<footer>
+    <p>Yasmim Oliveira da Silva (148)</p>
+</footer>
+
+<script>
+function alternarModoLeitura() {
+    document.body.classList.toggle('leitura');
+}
+</script>
+</body>
+</html>
+</body>
+</html>
