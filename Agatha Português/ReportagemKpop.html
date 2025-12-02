@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho de Português - REPORTAGEM</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fafafa;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        header {
+            background-color: #b79fd8;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            min-height: 70vh;
+        }
+
+        .borda-conto {
+            background: #fff;
+            border: 2px solid #b79fd8;
+            border-radius: 16px;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.18), 0 1.5px 6px rgba(74,144,226,0.12);
+            padding: 32px 24px;
+            max-width: 800px;
+            margin: 40px auto;
+            font-size: 1.25em;
+        }
+
+        .borda-conto h2 {
+            margin-top: 0;
+            text-align: center;
+            color: #b79fd8;
+        }
+
+       
+        .borda-conto b {
+            display: block;
+            text-align: center;
+            margin: 32px 0 8px 0;
+            font-size: 1.15em;
+        }
+
+        .img-reportagem {
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin: 24px auto;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+        }
+
+        .btn-modo {
+            display: block;
+            margin: 0 auto 24px auto;
+            padding: 10px 24px;
+            background: #b79fd8;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn-modo:hover {
+            background: #b79fd8;
+        }
+
+        footer {
+            background-color: #b79fd8;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        
+        @media (max-width: 600px) {
+            .borda-conto {
+                padding: 16px 8px;
+                margin: 16px 4px;
+                max-width: 98vw;
+            }
+            main {
+                padding: 8px;
+            }
+            header, footer {
+                padding: 10px;
+                font-size: 1em;
+            }
+            .btn-modo {
+                width: 100%;
+                font-size: 1em;
+            }
+        }
+
+        body.leitura {
+            background: #f5ecd7;
+            color: #222;
+        }
+        body.leitura .borda-conto {
+            background: #fffbe6;
+            color: #222;
+            border-color: #b79fd8;
+            font-size: 1.25em;
+            line-height: 2;
+            letter-spacing: 0.5px;
+        }
+        body.leitura header,
+        body.leitura footer {
+            background-color: #b79fd8;
+        }
+        body.leitura .btn-modo {
+            background: #b79fd8;
+        }
+        body.leitura .borda-conto h2 {
+            color: #b79fd8;
+        }
+
+     nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.nav-btn {
+    padding: 10px 18px;
+    font-size: 1.2em;
+    display: inline-block;
+    background: #b79fd8;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    margin: 0 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+        .nav-btn:hover {
+            background: #a88ac7;
+            color: #fff;
+        }
+
+.img-reportagem {
+    width: 60%;
+    display: block;
+    margin: 24px auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #222;
+    border: 6px double #b79fd8;
+}
+
+figcaption {
+    font-style: italic;
+    text-align: center;
+}
+h3 {
+    text-align: center;
+    font-style: italic;
+}
+iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    display: block;
+    margin: 24px auto;
+    border-radius: 12px;
+    border: 6px solid #b79fd8;
+}
+
+    </style>
+</head>
+<body>
+
+<header>
+    
+<h1>REPORTAGEM</h1>
+<nav>
+    <a href="slam.html" class="nav-btn">Slam</a>
+    <a href="ContoHibisco.html" class="nav-btn">Conto</a>
+    <a href="ReportagemKpop.html" class="nav-btn">Reportagem</a>
+</nav>
+</header>
+
+<main>
+    <button class="btn-modo" onclick="alternarModoLeitura()">Alternar modo claro/leitura</button>
+    <div class="borda-conto">
+          <h2>Muito além do K-Pop</h2>
+            <h3>Um mergulho nos gêneros musicais coreanos</h3>
+
+            <p>No sudeste asiático, a Coréia do Sul se destaca por sua rica cultura,
+            seja por meio da música, das diferentes tradições e de sua típica culinária.
+            O K-pop, mundialmente conhecido como um dos gêneros musicais mais escutados
+            nos dias atuais, furou a “bolha” e possui diversos ouvintes fora do seu país 
+            de origem, mas será mesmo que conhecemos a música coreana?</p>
+
+            <figure>
+                <img class="img-reportagem" src="Coreia.jpg" alt="Bandeira da Coréia do Sul">
+                <figcaption>Bandeira da Coréia do Sul</figcaption>
+            </figure>
+
+            <p>Sabemos que o K-Pop não é o único gênero musical existente na nação
+            sul-coreana, muitos outros estilos tradicionais também invadem o mercado
+            industrial, como no próprio Brasil. O K-Ballad e Trot são dois exemplos de
+            estilos musicais que não são tão populares, mas são tradicionais da Coreia.</p>
+
+            <h2>K-Pop</h2>
+            <p>O K-pop é considerado o gênero musical coreano mais popular, sendo conhecido
+            por suas músicas e artistas intrigantes que despertam o interesse no público.
+            O estilo musical surgiu na década de 90, com o primeiro grupo “Seo Taiji and Boys”
+            e, até hoje, segue chegando ao topo das paradas com artistas renomados como BTS,
+            BLACKPINK, TWICE, aespa, ATEEZ e entre outros.</p>
+
+            <figure>
+                <img class="img-reportagem" src="BLACKPINK.jpg" alt="Grupo feminino BLACKPINK">
+                <figcaption class="fig-legenda">Grupo feminino BLACKPINK</figcaption>
+
+                <img class="img-reportagem" src="BTS.jpg" alt="Grupo masculino BTS">
+                <figcaption>Grupo masculino BTS</figcaption>
+            </figure>
+
+            <h2>K-Ballad</h2>
+            <p>Embora em outros lugares já existam as baladas, na Coreia elas possuem seu
+            próprio gênero, o K-Ballad. O estilo surgiu na década de 80 e possui como referência
+            outros gêneros como o soul e o R&B. É popular dentro do país e conquistou fãs por
+            meio das famosas OSTs de doramas.</p>
+
+            <h2>K-Indie e K-Rock</h2>
+            <p>Os dois gêneros possuem origem semelhante. O K-Rock surgiu na década de 50 após
+            a Guerra da Coreia, enquanto o K-Indie cresceu na década de 90 como forma de expressão
+            alternativa. São estilos muito presentes em bandas independentes.</p>
+
+            <h2>Trot</h2>
+            <p>O Trot é o gênero musical coreano mais antigo, com origens no início do século XX
+            durante a ocupação japonesa. Mistura elementos da música japonesa e folclórica. Hoje,
+            apesar de menos popular, ainda influencia artistas atuais.</p>
+
+            <h2>Gugak (Música Tradicional)</h2>
+            <p>Gugak é o conjunto da música tradicional coreana. Inclui subgêneros como Aak 
+            (música da corte), Minsogak (música folclórica) e Jeongak (música instrumental
+            refinada). É fundamental para entender as raízes culturais da Coreia do Sul.</p>
+
+            <figure>
+                <img class="img-reportagem" src="Gugak.jpg" alt="Gugak, música tradicional coreana">
+                <figcaption>Música tradicional coreana Gugak</figcaption>
+            </figure>
+
+            <h2>Conclusão</h2>
+            <p>A Coreia do Sul vai muito além do K-pop: possui uma variedade enorme de estilos
+            musicais que representam sua cultura e história. Agora que você conhece todos eles...
+            qual é o seu favorito?</p>
+
+            <h2>Segue alguns clipes de K-pop</h2>
+            
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/Y8JFxS1HlDo" title="IVE - LOVE DIVE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <figcaption>Clipe de LOVE DIVE do grupo feminino IVE</figcaption>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/IHNzOHi8sJs" title="BLACKPINK - DDU-DU DDU-DU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <figcaption>Clipe de DDU-DU DDU-DU do grupo feminino BLACKPINK</figcaption>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/7HDeem-JaSY" title="Queencard - i-dle" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <figcaption>Clipe de Queencard do grupo feminino i-dle</figcaption>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/fE2h3lGlOsk" title="ITZY - WANNABE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <figcaption>Clipe de WANNABE do grupo feminino ITZY</figcaption>
+</figure>
+
+
+</main>
+
+<footer>
+    <p>Enzo Dorow Vaz dos Santos(148), Agatha Alves de Lima(148) e Luana Gonçalves Gomes(148)
+
+<script>
+function alternarModoLeitura() {
+    document.body.classList.toggle('leitura');
+}
+</script>
+</body>
+</html>
