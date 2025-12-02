@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Trabalho de Português - Conto</title>
+     <!-- Luiz Paulo Rezende Bergamini | Turma: 148-->
+
+<style>
+
+nav 
+{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nav-btn 
+{
+    padding: 10px 18px;
+    font-size: 1.2em;
+}
+
+body 
+{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fafafa;
+            transition: background 0.3s, color 0.3s;
+}
+
+header 
+{
+            background-color: #b79fd8;
+            color: white;
+            padding: 20px;
+            text-align: center;
+}
+
+main 
+{
+            padding: 20px;
+            min-height: 70vh;
+}
+
+.audio-center 
+{
+            display: flex;
+            justify-content: center;
+            margin: 24px 0;
+}
+
+.borda-conto 
+{
+            background: #fff;
+            border: 2px solid #b79fd8;
+            border-radius: 16px;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.18), 0 1.5px 6px rgba(74,144,226,0.12);
+            padding: 32px 24px;
+            max-width: 800px;
+            margin: 40px auto;
+            font-size: 1.25em;
+}
+
+.borda-conto h2 
+{
+            margin-top: 0;
+            text-align: center;
+            color: #b79fd8;
+}
+
+.btn-modo 
+{
+            display: block;
+            margin: 0 auto 24px auto;
+            padding: 10px 24px;
+            background: #b79fd8;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.2s;
+}
+.btn-modo:hover 
+{
+            background: #a88ac7;
+}
+
+footer 
+{
+            background-color: #b79fd8;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 1em;
+            margin: 0;
+            border-top: none;
+}
+
+@media (max-width: 600px) 
+{
+ .borda-conto 
+ {
+                padding: 16px 8px;
+                margin: 16px 4px;
+                max-width: 98vw;
+ }
+ main 
+ {
+                padding: 8px;
+ }
+ header, footer 
+ {
+                padding: 10px;
+                font-size: 1em;
+ }
+ .btn-modo 
+ {
+                width: 100%;
+                font-size: 1em;
+                display: block;
+ }
+ body.leitura .borda-conto 
+ {
+                font-size: 1.45em;
+                line-height: 2.3;
+                padding: 24px 6px;
+                background: #fffbe6;
+                color: #222;
+ }
+ .audio-center
+  {
+                margin: 16px 0;
+ }
+}
+
+body.leitura 
+{
+            background: #f5ecd7;
+            color: #222;
+}
+body.leitura .borda-conto 
+{
+            background: #fffbe6;
+            color: #222;
+            border-color: #b79fd8;
+            font-size: 1.25em;
+            line-height: 2;
+            letter-spacing: 0.5px;
+}
+        body.leitura header,
+body.leitura footer 
+{
+            background-color: #b79fd8;
+}
+body.leitura .btn-modo 
+{
+            background: #b79fd8;
+}
+body.leitura .borda-conto h2 
+{
+            color: #b79fd8;
+}
+
+nav 
+{
+            margin-top: 16px;
+            text-align: center;
+}
+.nav-btn 
+{
+            display: inline-block;
+            background: #b79fd8;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 24px;
+            margin: 0 8px;
+            font-size: 1em;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.2s;
+}
+.nav-btn:hover 
+{
+            background: #a88ac7;
+            color: #fff;
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>CONTO (baseado no livro "Hibisco Roxo - Chimamanda Ngozi Adichie")</h1>
+             <nav>
+                <a href="SlamLuiz.html" class="nav-btn">Slam</a>
+                <a href="ContoLuiz.html" class="nav-btn">Conto</a>
+                <a href="Reportagem.html" class="nav-btn">Reportagem</a>
+             </nav>
+    </header>
+<main>
+    <button class="btn-modo" onclick="alternarModoLeitura()">Alternar modo claro/leitura</button>
+    <div class="borda-conto">
+        <h2>Problemas nos negocios</h2>
+<p>
+Era uma noite de domingo como qualquer outra, nós acabávamos de voltar da missa para termos nosso jantar, quando alguém bateu na porta de repente. <br>
+ <br>
+— Quem será? — disse Mama terminando de cozinhar a sopa de Onugbu<br>
+— Eu atendo — disse Jaja. <br>
+ <br>
+Era um dos amigos mais próximos de Papa, eu lembro que eles costumavam conversar bastante sobre os negócios. <br>
+ <br>
+— José, como você está? Entre e sente-se — Papa disse.	<br>
+— Eugene, nós estamos com sérios problemas — José proclamou. <br>
+— Qual seria o problema? — Papa perguntou. <br>
+— A polícia decidiu fechar as nossas fábricas por causa de uma “infestação de insetos” — disse José. <br>
+ <br>
+Quando olhei para Papai, ele parecia incrédulo, pois há pouco tempo ele havia enviado pessoas para analisar as condições sanitárias das fábricas. <br>
+ <br>
+— Quais das fábricas foram fechadas? — perguntou Papa com uma frustração em sua voz. <br>
+— Eugene, é esse o problema, a polícia fechou todas as nossas fábricas — disse José. <br>
+ <br>
+Papai pulou de sua poltrona com tanta velocidade que eu pensei que ele sairia correndo até a fábrica. Ele foi até a cozinha, encheu um copo de água e só voltou. <br>
+ <br>
+— Você só pode estar brincando! — disse Papai com raiva. <br>
+— Infelizmente, Eugênio, eu não estou brincando — José disse<br>
+— Venha, vamos conversar no meu escritório — disse Papai. <br>
+— Certo, vamos — disse José. <br>
+ <br>
+Após isso, eles subiram ao escritório para conversar sobre isso, enquanto eu e Jaja esperávamos Mama terminar o jantar<br>
+ <br>
+— A janta esta pronta, Biku você poderia me ajudar a levar a panela para a mesa? — gritou Mama<br>
+— Claro Mama. <br>
+ <br>
+Enquanto Jaja e Mama estavam na cozinha, decidi  chegar perto da porta do escritório de Papa para ouvir sua conversa, eles falavam baixo mas dava para entender um pouco. <br>
+ <br>
+— Como assim todos os nossos negócios foram fechados? — perguntou papa com muita raiva <br>
+ — pensei que somente as fabricas foram fechadas. <br>
+— Então Eugene, a policia... — a voz de José tornou-se inaudível<br>
+— Isso não é possível, e como eu vou contar para as crianças, e a igreja? — Papa disse preocupado<br>
+— Sugiro você falar primeiro com a Beatrice, depois com o padre Benedict e, por ultimo com Jaja e Kambli. <br>
+— Essa é uma boa sugestão, mas e os negócios? — perguntou Papa<br>
+— Sugiro nós... — José falava mas eu não entendia<br>
+ <br>
+Decidi voltar para a mesa para que nem Papa, nem Mama e nem Jaja descobrisse que eu ouvi a conversa de Papa. Quando eu voltei, a panela com a sopa já estava na mesa, mas Jaja e Mama ainda estavam na cozinha. <br>
+Quando Jaja e Mama chegavam a mesa, Mama segurava uma jarra de suco e Jaja segurava uma panela com fufu<br>
+ <br>
+— Eugene, vem jantar — gritou Mama. <br>
+ <br>
+Quando Papa saiu do escritório, parecia que havia envelhecido 10 anos, antes de Papa se sentar, ele convidou José para jantar com nós, mas ele se recusou. Papa então o acompanhou até a saída da casa. <br>
+Após a saída de José, Papa se sentou a mesa e começou a sua oração antes de comermos. Quando terminamos de orar, nos começamos a comer, porem antes de eu perguntar algo a  Papa, Jaja perguntou<br>
+ <br>
+— O que ele te disse? <br>
+— Nada de mais... — disse Papa<br>
+ <br>
+Houve um silencio após essa pergunta, um longo silencio, ate que Mama, tentando quebrar o silencio perguntou. <br>
+ <br>
+— Jaja, Kambli, como vai a escola? <br>
+— Bem, nos acabamos de realizar uma prova — disse Jaja<br>
+— Não tivemos nada de importante ainda — disse eu<br>
+ <br>
+Quando terminamos de jantar, Papa fez uma oração rápida e saiu apressadamente para o escritório, Mama por sua vez, pediu para nos irmos aos nossos quartos enquanto ela falaria com Papa. <br>
+Eu já me preparava para dormir quando Jaja bateu a minha porta e perguntou<br>
+ <br>
+— Você ouviu sobre o que eles estavam conversando, não é? <br>
+— Mais ou menos<br>
+— Sobre o que eles falavam então? — perguntou Jaja com um pouco de excitação<br>
+— Não ouvi muito, mas o que eu ouvi é que Papa teve alguns de seus negócios fechados. <br>
+— Aparentemente é serio — Jaja disse<br>
+— Acho que sim. <br>
+ <br>
+Após a nossa conversa, Jaja saiu do quarto e fechou a porta e eu descendi que já iria dormir. Essa noite, sonhei com Papa sendo questionado pelos policiais, suas expressões eram serias, Papa estava falando com um deles quando ele foi levado, lembro que Mama estava chorando e Jaja estava indiferente. <br>
+<br>
+<br>
+Quando acordei, vi Papa conversando com alguém, mas não eram militares, mas com uns corretores de imóveis. <br>
+ <br>
+— Suponho que devido a condição dessa casa, ela deve ser avaliada em mais ou menos 10 bilhões de nairas — disse o homem<br>
+— Certo, vamos sair em 1 semana — disse Papa<br>
+— Quando estiverem saindo, me liguem para entregar a chave — disse o homem<br>
+— Certo<br>
+ <br>
+Papa fechou a porta e deu um longo suspiro antes de falar comigo e com Jaja, antes dele falar alguma coisa, notei Mama no centro da sala com uma cara preocupada, me perguntei se ela sabia o que estaria por vir. <br>
+ <br>
+— Kambli, Jaja, devido a alguns assuntos... Papa falou tenso<br>
+— Vamos ter que ir morar temporariamente na cidade de Dsukka. <br>
+— Por que Papa? — Perguntou eu<br>
+— Alguns problemas nos negócios, mas é temporário — disse Papa tentando não nos preocupar. <br>
+— Ok — disse Jaja<br>
+— Certo, Papa<br>
+ <br>
+Papa estava falando que não era para nós nos preocuparmos, que tudo daria certo mas eu estava mais concentrada em que problemas aconteceram de fato, quando Mama disse<br>
+ <br>
+— Já que vocês já estão cientes do assunto, vão ate seus quartos e preparem uma mala. <br>
+— Certo Mama — disse eu<br>
+ <br>
+Enquanto eu preparava a minha mala, Mama entrou no meu quarto para me tranquilizar, quando ela perguntou se eu estava bem, eu só consegui perguntar: <br>
+ <br>
+— O que de fato aconteceu Mama? <br>
+ <br>
+Mama nada dissera, alguma coisa me fez pensar que Mama também não sabia o motivo dessa mudança. <br>
+ <br>
+— Vai ficar tudo bem — disse Mama<br>
+ <br>
+Quando sai do meu quarto com a mala, vi Papa falando com a Sisi, antes que eu pudesse dizer algo a ela, vi ela saindo da casa, logo após a conversa entre Papa e Sisi, Jaja também saiu do quarto com a mala, vi Papa indo ate o telefone e ligando para alguém enquanto isso, eu e Jaja esperávamos Mama fazer a sua mala quando ele me perguntou: <br>
+ <br>
+— Mama te falou alguma coisa? <br>
+— Não<br>
+— Entendo, Mama me disse pouca coisa — disse Jaja<br>
+— E o que ela disse<br>
+— Disse que os negócios irritaram algumas pessoas dos militares, e que por isso todos os negócios de Papa foram fechados. <br>
+— Caramba, então de fato era sério — disse eu<br>
+— Sim<br>
+ <br>
+Papa saiu do telefone e veio ate nos, ele disse para nos que Kevin já estava lá fora, e que era para nos colocarmos as malas no carro, quando nos entramos, Mama já estava lá. Papa demorou um bom tempo para fazer a mala, mas quando saiu, parecia irritado. <br>
+ <br>
+A viagem até Dsukka foi silenciosa, nenhum de nós queríamos trazer o assunto à tona, Kevin notou a tensão e não disse nada, quando chegamos na cidade, notei que ela parecia um pouco mais vazia que o normal. <br>
+ <br>
+Quando Kevin parou, olhei pela janela para ver a nossa nova casa, ela era grande, não tão grande quanto a nossa antiga, mas o bastante para 4 pessoas, Papa, Jaja e Kevin estavam tirando as nossas malas, enquanto eu e Mama íamos ver o resto da casa. <br>
+Após descarregarem as malas, Kevin se despediu da gente e saiu com o carro, logo após isso, Papa tocou o meu ombro e o de Jaja, e disse<br>
+ <br>
+— Não se preocupem com a escola, Já matriculamos vocês aqui na escola local — disse Papa<br>
+— Certo Papa<br>
+— Ok — disse Jaja<br>
+ <br>
+Mama pediu para nos entrarmos e arrumarmos as nossas coisas, o maior quarto ficou com Papa e Mama, e os outros quartos ficaram comigo e Jaja. Quando entrei no meu quarto, notei que ele era bem menor que o meu quarto antigo mas ele parecia ser mais aconchegante que o quarto antigo<br>
+ <br>
+No decorrer dessa semana, após nos estabilizarmos com a rotina na nova casa, Papa muitas vezes ia até a nossa antiga casa para conversar com aqueles corretores de Imóveis. Me readaptar com a nova escola não foi tão simples, eu só não me sentia pertencente aquele lugar, mas Jaja se readaptou com muita facilidade<br>
+ <br>
+No domingo, Papa, Mama, Jaja e eu fomos na igreja local, Papa se sentiu ofendido por não ter sido reconhecido na missa, coisa que o padre Benedict sempre fizera, quando a missa terminou, nós apressadamente fomos para casa, mas enquanto saiamos notei 2 militares observando Papa de longe. 
+ <br>
+<br> Chegando em casa, Mama mandou nós nos trocarmos para almoçarmos enquanto ela faria o almoço, subi para o meu quarto e, enquanto me trocava, ouvi um grande estrondo vindo da porta. Quando Saí do quarto, Papa não estava em lugar nenhum, Mama estava no chão chorando. <br>
+ <br>
+— Eles o levaram! — Disse Mama desesperada<br>
+Por mais que eu não gostasse das punições que Papa aplicava, chorei junto de Mama até Jaja sair do quarto<br>
+— O que está acontecendo Mama? — Disse Jaja assim que nos viu chorando<br>
+— Eles levaram o Eugene, Jaja — Disse Mama<br>
+— Como assim? — Perguntou Jaja<br>
+ <br>
+Mama então explicara como acontecera, ela disse que enquanto Mama estava na cozinha, Papa estava lendo o jornal quando os militares invadiram a casa e levaram Papa sem nem dizer nada. <br>
+
+</p>
+    </div>
+</main>
+<footer>
+    <p>Luiz Paulo Rezende Bergamini (148)</p>
+</footer>
+<script>
+function alternarModoLeitura() 
+{
+    document.body.classList.toggle('leitura');
+}
+</script>
+</body>
+</html>
